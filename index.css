@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+header {
+    background-color: rgb(56, 49, 49);
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border: 1px solid green;
+    width: 100%;
+}
+
+nav {
+    background-color: yellow;
+    height: 100%;
+    padding: 10px;
+}
+
+nav a {
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    background-color: rgb(56, 49, 49);
+    color: yellow;
+}
+
+.logo {
+    padding: 10px 30px;
+}
+
+.logo a {
+    color: yellow;
+}
+
+.logo a:hover {
+    font-size: 1.1em;
+}
+
+@media (max-width: 700px)
+{
+    .logo {
+        display: none;
+    }
+
+    header {
+        background-color: yellow;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+        flex-direction: column;
+    }
+}
