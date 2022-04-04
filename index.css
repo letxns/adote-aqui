@@ -15,29 +15,45 @@ body {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
+
 header {
-    background-color: rgb(56, 49, 49);
+    background-color: #f25142d3;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 15px;
-    border: 1px solid green;
     width: 100%;
 }
 
-nav {
-    background-color: yellow;
-    height: 100%;
-    padding: 10px;
+footer {
+    background-color: #f25142d3; 
+    color: #f4effc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+    display: flex;
+    justify-content: center;
 }
 
-nav a {
+nav {
+    display: flex;
+    background-color: #f4effc;
+    padding: 5px;
+    justify-content: center;
+}
+
+nav a { 
     padding: 10px 30px;
     color: rgb(0, 0, 0);
 }
 
 nav a:hover {
-    background-color: rgb(56, 49, 49);
-    color: yellow;
+    background-color: #f25142d3;
+    color: #f4effc;
+    border-radius: 5px;
+}
+
+.imagem-container {
+    display: flex;
+        justify-content: center;
 }
 
 .logo {
@@ -45,26 +61,64 @@ nav a:hover {
 }
 
 .logo a {
-    color: yellow;
+    color: #f4effc;
 }
 
 .logo a:hover {
-    font-size: 1.1em;
+    font-size: 1.3em;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media  {
+    display: flex;
+}
+
+.social-media a {
+    color: #f25142d3;
 }
 
 @media (max-width: 700px)
 {
+    
+
+    header {
+        display: flex;
+        justify-content: center;           
+        flex-direction: column;
+        background-color: #f25142d3;
+    }
+
+    nav {
+        width: 100%;
+        background-color: #f25142d3;
+    }
+
+    nav a {
+        text-align: center; 
+        margin-bottom: 5px;
+        background-color: #ebb4b477;
+        border: 1px solid #ebb4b477;
+        border-radius: 5px;
+    }
+
     .logo {
         display: none;
     }
 
-    header {
-        background-color: yellow;
-        justify-content: center;
-    }
-
-    nav a {
-        display: block;
+    .menu{
+        width: 100%;
+        display: flex;
         flex-direction: column;
     }
+    .social-media {
+        display: none;
+        /*display: flex;
+        flex-direction: column;*/
+    }
+    
+
 }
